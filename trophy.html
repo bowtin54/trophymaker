@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trophy Maker</title>
+    <script src="trophymaker.js"></script>
+</head>
+
+
+<body>
+    <canvas id="trophy-area">
+
+    </canvas>
+
+    <div id="radio-wrapper">
+        <input type="radio" name="trophy-type" id="gold-trophy" value="gold" checked="checked">
+        <label for="gold-trophy">Gold</label>
+
+        <input type="radio" name="trophy-type" id="silver-trophy" value="silver">
+        <label for="silver-trophy">Silver</label>
+        
+        <input type="radio" name="trophy-type" id="bronze-trophy" value="bronze">
+        <label for="bronze-trophy">Bronze</label>
+    </div>
+
+    <div id="text-wrapper">
+        <input type="text" id="trophy-title" placeholder="Trophy Title" maxlength="20">
+        <input type="text" id="trophy-text" placeholder="Trophy Text" maxlength="30">
+        <input type="text" id="trophy-holder" placeholder="Your Name" maxlength="15">
+        <button type="button" id="create-image">生成する</button>
+        <button type="button" id="reset-everything">リセットする</button>
+    </div>
+</body>
+</html>
